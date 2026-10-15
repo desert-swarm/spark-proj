@@ -4,13 +4,13 @@
     # 1. automatically install the correct Java and Spark versions locally
     packages = [
     pkgs.openjdk11
-    pkgs.apache-Spark
+    pkgs.spark
     ];
 
     # 2. scope the required environment variables strictly to this project
     enterShell = ''
         export JAVA_HOME=${pkgs.openjdk11}
-        export SPARK_HOME=${pkgs.apache-spark}
+        export SPARK_HOME=${pkgs.spark}
         export PATH=$SPARK_HOME/bin:$PATH
         echo "⚡ isolated Spark development environment loaded!"
     '';

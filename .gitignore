@@ -1,0 +1,8 @@
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+
+
+# Pre-commit hooks
+.pre-commit-config.yaml
